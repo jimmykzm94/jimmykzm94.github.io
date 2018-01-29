@@ -31,3 +31,7 @@ h1{
   cursor:pointer;
   border-width: 5px;
 }
+
+#mc_embed_signup_scroll{
+  text-align: center;
+}
