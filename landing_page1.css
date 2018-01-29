@@ -1,0 +1,33 @@
+body,html{
+  margin:0;
+  background-image: url(http://moxetkhan.com/wp-content/uploads/2015/05/IMG_1625.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+header{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+margin-top: 20px;
+}
+
+h1{
+  color:#2f697c;
+}
+
+.btn-primary:hover{
+  cursor:pointer;
+  border-width: 5px;
+}
