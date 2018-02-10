@@ -9,10 +9,10 @@ html{
     /* background-repeat: no-repeat; */
     padding:20px;
     background-attachment: fixed;
-    background-size: 400% 400%;
+    /* background-size: 400% 400%; */
   }
  }
-@media (min-width: 992px) {
+@media (min-width: 1001px) {
   body{
     /* background: linear-gradient(40deg, #FFD86F, #FC6262); */
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
