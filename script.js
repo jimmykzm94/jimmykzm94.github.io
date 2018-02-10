@@ -127,6 +127,7 @@ document.getElementById("second").innerHTML="Previous Hash: "+myBrew.getLatestBl
 document.getElementById("third").innerHTML="Hash: "+myBrew.getLatestBlock().hash;
 document.getElementById("fourth").innerHTML="Nonce: "+myBrew.getLatestBlock().nonce;
 document.getElementById("fifth").innerHTML="Data: "+myBrew.getLatestBlock().data;
+document.getElementById("sixth").innerHTML="Timestamp: "+myBrew.getLatestBlock().timestamp;
 
 function addDiv() {
   if (input.value.length > 0) {
@@ -135,12 +136,14 @@ function addDiv() {
     var third = document.createElement("div");
     var fourth = document.createElement("div");
     var fifth = document.createElement("div");
+    var sixth = document.createElement("div");
 
     var h1 = document.createElement("h1");
     var p1 = document.createElement("p");
     var p2 = document.createElement("p");
     var p3 = document.createElement("p");
     var p4 = document.createElement("p");
+    var p5 = document.createElement("p");
 
     myBrew.addToChain(myBrew.createBlock(input.value));
     // myBrew.addToChain(myBrew.createBlock('The 2nd block'));
@@ -150,6 +153,7 @@ function addDiv() {
     var word3 = document.createTextNode("Hash: "+myBrew.getLatestBlock().hash);
     var word4 = document.createTextNode("Nonce: "+myBrew.getLatestBlock().nonce);
     var word5 = document.createTextNode("Data: "+input.value);
+    var word6 = document.createTextNode("Timestamp: "+myBrew.getLatestBlock().timestamp);
 
     var div = document.createElement("div");
     var classAtr = document.createAttribute("class");
@@ -165,17 +169,20 @@ function addDiv() {
     p2.appendChild(word3);
     p3.appendChild(word4);
     p4.appendChild(word5);
+    p5.appendChild(word6);
     first.appendChild(h1);
     second.appendChild(p1);
     third.appendChild(p2);
     fourth.appendChild(p3);
     fifth.appendChild(p4);
+    sixth.appendChild(p5);
 
     div.appendChild(first);
     div.appendChild(second);
     div.appendChild(third);
     div.appendChild(fourth);
     div.appendChild(fifth);
+    div.appendChild(sixth);
 
     container.appendChild(div);
 

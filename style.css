@@ -2,18 +2,29 @@ html{
   height:100%;
 }
 
-body{
-  /* background: linear-gradient(40deg, #FFD86F, #FC6262); */
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  /* background-repeat: no-repeat; */
-  padding:20px;
-  background-attachment: fixed;
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
-}
-
+@media (min-width: 576px) {
+  body{
+    background: linear-gradient(40deg, #FFD86F, #FC6262);
+    /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+    /* background-repeat: no-repeat; */
+    padding:20px;
+    background-attachment: fixed;
+    background-size: 400% 400%;
+  }
+ }
+@media (min-width: 992px) {
+  body{
+    /* background: linear-gradient(40deg, #FFD86F, #FC6262); */
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    /* background-repeat: no-repeat; */
+    padding:20px;
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+ }
 
 
 @-webkit-keyframes AnimationName {
@@ -33,17 +44,20 @@ body{
 }
 
 .division{
-  border:1px solid black;
+  border-radius:5px;
   margin:20px;
   width:auto;
   font-family: 'Roboto', sans-serif;
   background-color: rgba(255,255,255,0.6);
   transition: 0.3s ease-in-out;
+  transition: all 300ms;
 }
 .division:hover{
-  box-shadow: 0 20px 100px rgba(64, 144, 223,0.3);
+  box-shadow: 0 20px 100px rgba(36, 252, 65,0.3);
   transition: 0.3s ease-in-out;
+  transform:scale(1.02);
 }
+
 
 .data_mining{
   display: flex;
