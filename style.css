@@ -42,6 +42,13 @@ html{
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+footer>b{
+  font-family: 'Poiret One', cursive;
+  float:right;
+}
+::selection{
+  background-color:rgba(255, 194, 191,0.5);
+}
 
 .division{
   border-radius:5px;
@@ -66,20 +73,14 @@ html{
   width:200px;
   margin:0 auto;
 }
+.text-center{
+  font-family: 'Lobster', cursive;
+}
 
 #data_input{
   margin-bottom: 5px;
 }
 
-.text-center{
-  font-family: 'Lobster', cursive;
-}
-
 #first{
   font-family: 'Courgette', cursive;
-}
-
-footer>b{
-  font-family: 'Poiret One', cursive;
-  float:right;
 }
